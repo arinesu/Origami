@@ -13,15 +13,25 @@ Repositório no GitHub:
 
 **Professores:**
 Programação de Dispositivos Móveis
+
 João Monge
+
 Redes e Comunicação de Dados
+
 Pedro Rosa
+
 Bases de Dados
+
 Miguel Boavida
+
 Interfaces e Usabilidade
+
 Paula Neves
+
 Matemática Discreta
+
 Ricardo Manuel de Sousa
+
 
 # Relatório - Projeto Mobile - Origami
 • Origami é uma aplicação móvel concebida com o intuito de promover a saúde mental e facilitar a expressão emocional, através do fornecimento de um espaço digital anónimo, imersivo e reconfortante. O seu objetivo é mitigar o isolamento e a dificuldade em partilhar sentimentos, oferecendo um mapa interativo onde os desabafos navegam como barcos de papel, um sistema de acompanhamento diário mediado por um "Espírito Guia", e a possibilidade de descobrir e guardar barcos de papel com desabafos anónimos, deixados à deriva no mapa por utilizadores aleatórios. Sem recorrer a mensagens diretas, estes textos são lançados para o globo sem um destinatário específico, promovendo uma rede orgânica de empatia e um verdadeiro porto seguro virtual.
