@@ -3,34 +3,29 @@
 ---
 
 
-**Curso:**
+## Curso:
 Engenharia Informática
 
-**Elementos do Grupo:**
+## Elementos do Grupo:
 Inês Domingos - 20231458
 
 Repositório no GitHub:
 
-## Professores:
-Programação de Dispositivos Móveis
+## Professores
+**Programação de Dispositivos Móveis**
+<br>João Monge
 
-João Monge
+**Redes e Comunicação de Dados**
+<br>Pedro Rosa
 
-Redes e Comunicação de Dados
+**Bases de Dados**
+<br>Miguel Boavida
 
-Pedro Rosa
+**Interfaces e Usabilidade**
+<br>Paula Neves
 
-Bases de Dados
-
-Miguel Boavida
-
-Interfaces e Usabilidade
-
-Paula Neves
-
-Matemática Discreta
-
-Ricardo Manuel de Sousa
+**Matemática Discreta**
+<br>Ricardo Manuel de Sousa
 
 
 # Relatório - Projeto Mobile - Origami
