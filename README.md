@@ -124,18 +124,44 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 
 # Project Charter
 **1. General Project Information**
-- Charter Date: [Inserir Data Atual, ex: 19 September 2026]
+- Charter Date: 19 September 2026
 
 - Project Name: Origami
 
 - Project Managers: Inês Domingos
 
-- Expected Start Date: [Inserir data de início, ex: 10 October 2026]
+- Expected Start Date: 1 October 2026
 
-- Expected Completion Date: [Inserir data de fim, ex: 12 January 2027]
+- Expected Completion Date: 11 December 2026
 
 **2. Project Details**
 - Origami is a mobile application designed to promote mental health and facilitate emotional expression by providing an anonymous, immersive, and comforting digital space. The main reason behind this project is to create an alternative to conventional social networks, mitigating isolation and the difficulty in sharing feelings. By replacing the anxiety of likes and direct messaging with a contemplative environment where users can release their thoughts as paper boats on a global map, we aim to offer a digital refuge and a true virtual safe haven.
 
 **3. Key Requirements**
+
   - **Database:** MySQL for data storage, connected to the backend via REST API.
+  - 
+  - **UI/UX Design:** User interface designed in Figma, following a minimalist aesthetic with analog-inspired textures (crumpled paper, glassmorphism) for a relaxing experience.
+  - 
+  - **Mobile Programming:** Developed in Kotlin using the Android SDK, ensuring a smooth native experience.
+  - 
+  - **Backend Programming:** Backend developed in Java using Spring Boot, with RESTful APIs to manage data and communicate securely with the database.
+  - 
+  - **Platform:** Native Android app, compatible with modern Android devices.
+
+
+**4. Expected Benefits**
+
+- Improved Mental Well-being: The application offers a therapeutic space for journaling and self-reflection, helping users manage daily stress and anxiety.
+- Anonymous Support Network: The ability to discover and save empathetic messages (paper boats) left by random users fosters a sense of indirect global community and mutual support without the pressure of direct communication.
+- Emotional Monitoring: A non-intrusive emotional tracking mechanism, mediated by a "Spirit Guide," helps users monitor their daily mood over time.
+- Reduced Cognitive Load: The minimalist and soothing UX/UI design ensures a frictionless and relaxing user experience, countering the overwhelm typical of modern social media.
+
+**5. Estimated Costs & Resources**
+
+- Estimated Costs: [Ajustar o valor conforme planeado, ex: $3000]
+- Resources: [Ajustar o valor conforme planeado, ex: $450]
+
+
+**6. Estimated Milestones**
+
