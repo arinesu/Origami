@@ -56,3 +56,86 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 2. Slowly: Focada na troca de cartas digitais com correspondentes globais, prioriza o anonimato e uma comunicação mais intencional e lenta, afastando-se da ansiedade e do imediatismo das redes sociais tradicionais.
 3. Finch (ou Wysa): Aplicações de autocuidado e saúde mental que utilizam um "guia" ou mascote virtual (como um pássaro ou um pinguim) para ajudar o utilizador a monitorizar o seu humor diário e praticar a autorreflexão.
 
+# Guiões de Teste
+## Caso de Utilização Principal: Libertação de um Desabafo no Mapa (Core)
+1. O utilizador faz o login ou cria uma conta;
+2. É recebido pelo seu Espírito Guia (ex: Grou, Tartaruga ou Baleia) que lhe pergunta como se sente hoje;
+3. O utilizador escreve o seu desabafo ou pensamento numa caixa de texto com textura de papel;
+4. Ao concluir, seleciona a emoção predominante (ex: Ansiedade, Esperança) que ficará associada como uma tag ao seu barco;
+5. Clica no botão para "Lançar", e visualiza uma animação do seu texto a dobrar-se num barco de papel;
+6. O ecrã transita para o mapa global, onde o utilizador vê o seu barco a juntar-se a outros barcos a flutuar no "mar".
+
+## Casos de Utilização Secundários:
+**- Descoberta e Recolha de Barcos:**
+1. O utilizador encontra-se no ecrã do mapa global interativo;
+2. Navega pelo mapa e seleciona um barco de papel deixado à deriva por um utilizador anónimo;
+3. O barco desdobra-se, revelando o texto do desabafo e a emoção associada;
+4. O utilizador sente empatia pela mensagem e seleciona a opção "Guardar no meu Porto Seguro";
+5. A mensagem é adicionada à sua coleção pessoal no ecrã de Perfil para leitura futura, promovendo uma rede de apoio indireta.
+
+**- Consulta do Histórico Pessoal (Porto Seguro):**
+1. O utilizador acede ao seu menu de Perfil (identificado pelo seu Avatar e Nickname anónimo);
+2. Seleciona o separador "Os Meus Barcos" para rever os desabafos que já lançou ao mar no passado;
+3. Alterna para o separador "Barcos Guardados";
+4. Visualiza as mensagens empáticas de outros utilizadores que colecionou, organizadas num layout estilo "alvenaria" (como pequenos post-its de papel sobrepostos).
+
+# Descrição da solução
+**1. Descrição Genérica:**
+- A solução consiste na criação de uma **aplicação móvel imersiva e focada na saúde mental**, que oferece uma experiência segura e anónima de expressão emocional. Inclui funcionalidades como um **mapa global interativo** onde navegam mensagens em forma de barcos de papel, um sistema de **acompanhamento diário de humor** mediado por um "Espírito Guia", e a possibilidade de recolher e colecionar mensagens de empatia deixadas por outros utilizadores num "Porto Seguro" (perfil pessoal).
+
+**2. Enquadramento nas Unidades Curriculares:**
+- **Programação de Dispositivos Móveis:** Desenvolvimento nativo da aplicação móvel (interface e lógica client-side) recorrendo ao **Android Studio**. <br>
+
+- **Interfaces e Usabilidade:** Desenho, prototipagem e validação da experiência do utilizador (UX/UI) no **Figma**, garantindo uma navegação fluida, minimalista e a aplicação de texturas visuais (como o efeito de papel e glassmorphism).<br>
+
+- **Redes e Comunicação de Dados:** Implementação da arquitetura de comunicação entre a aplicação móvel (frontend) e o servidor (backend), assegurando a transmissão segura e eficiente dos dados (como o envio e recolha dos barcos no mapa global).<br>
+
+- **Bases de Dados:** Estruturação e armazenamento seguro das informações essenciais, tais como as credenciais anonimizadas dos utilizadores, o registo de humor diário e o histórico das mensagens (barcos) partilhadas e guardadas.<br>
+
+- **Matemática Discreta:** Aplicação de lógica matemática e teoria dos grafos/conjuntos para otimizar o algoritmo de distribuição dos barcos de papel no mapa global. Esta lógica garantirá que a visualização das mensagens seja dispersa, pseudoaleatória e eficiente, evitando sobreposição de barcos no ecrã.<br>
+
+**3. Requisitos Técnicos:**
+
+- **Linguagens de Programação:** Kotlin (Frontend) e Java (Backend).<br>
+
+- **Plataforma de Desenvolvimento:** Android Studio.<br>
+
+- **Design e Prototipagem:** Figma.<br>
+
+- **Base de Dados:** MySQL (via MySQL Workbench).<br>
+
+- **API:** Spring Boot.<br>
+
+**4. Arquitetura da Solução:**<br>
+
+• **Frontend:** Desenvolvimento da interface gráfica e interatividade da aplicação no Android Studio, consumindo os serviços da API.<br>
+
+• **Backend:** Utilização da framework Spring Boot para gerir a lógica de negócio, a autenticação anonimizada e a comunicação fluida entre a aplicação móvel e a base de dados.<br>
+
+• **Base de Dados:** Utilização de MySQL para modelação e persistência dos dados (utilizadores, barcos e registos de humor).<br>
+
+**5. Tecnologias a utilizar:**<br>
+
+• **Frontend:** Kotlin.<br>
+
+• **Backend:** Java.<br>
+
+• **Base de Dados:** MySQL.<br>
+
+# Project Charter
+**1. General Project Information**
+- Charter Date: [Inserir Data Atual, ex: 19 September 2026]
+
+- Project Name: Origami
+
+- Project Managers: Inês Domingos
+
+- Expected Start Date: [Inserir data de início, ex: 10 October 2026]
+
+- Expected Completion Date: [Inserir data de fim, ex: 12 January 2027]
+
+**2. Project Details**
+- Origami is a mobile application designed to promote mental health and facilitate emotional expression by providing an anonymous, immersive, and comforting digital space. The main reason behind this project is to create an alternative to conventional social networks, mitigating isolation and the difficulty in sharing feelings. By replacing the anxiety of likes and direct messaging with a contemplative environment where users can release their thoughts as paper boats on a global map, we aim to offer a digital refuge and a true virtual safe haven.
+
+**3. Key Requirements**
+  - **Database:** MySQL for data storage, connected to the backend via REST API.
