@@ -46,9 +46,13 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 
 # Público-Alvo
 • Jovens e Jovens Adultos (Geração Z e Millennials) que procuram um refúgio digital face à pressão, métricas e toxicidade das redes sociais convencionais;
+
 • Indivíduos que lidam com stress, ansiedade ou isolamento, e que necessitam de um espaço seguro e totalmente anónimo para desabafar sem receio de julgamento;
+
 • Pessoas introvertidas com dificuldade em verbalizar ou expressar os seus sentimentos diretamente a amigos e familiares;
+
 • Praticantes de journaling e mindfulness interessados numa ferramenta poética e imersiva para monitorizar o seu estado de espírito diário;
+
 • Utilizadores à procura de empatia e apoio mútuo, que encontram conforto na leitura e partilha de vulnerabilidades com uma comunidade global anónima.
 
 # Aplicações Semelhantes
