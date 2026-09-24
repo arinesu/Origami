@@ -169,3 +169,35 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 
 **6. Estimated Milestones**
 
+- UI/UX Design - September 28
+- Database - December 13
+- Mobile Programming - December 20
+- Backend Programming - January 10
+
+
+**7. Project Team**
+
+Developers:
+- Inês Domingos
+- Reginaldo António
+- Evandra Biala
+- Catarina Lourenço
+
+
+**8. Stakeholders**
+
+**9. Overall Project Risk**
+
+Risks:
+- Due to the limited time to complete the project, there is a risk that we will not be able to implement all the desired functionalities (such as the complex map visualization).
+- The unconventional approach to social interaction (no direct messaging, anonymity) might result in a learning curve for users accustomed to traditional social media, potentially compromising initial adoption.
+
+Mitigations:
+- Conduct development and brainstorming sessions to prioritize essential features (the core loop of writing and releasing a boat) and ensure better project planning.
+- Collect feedback from a group of beta users during the testing phase to identify areas for improvement in the onboarding process and promote acceptance of the app's unique mechanics.
+
+**10. Project Success Criteria**
+
+- If all core features are working and public acceptance is favorable, indicating that the app successfully provides a relaxing and safe environment for emotional expression, we could consider expanding the platform's reach or partnering with mental health awareness initiatives to promote the app to individuals dealing with anxiety or isolation.
+
+
