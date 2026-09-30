@@ -144,13 +144,13 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 **3. Key Requirements**
 
   - **Database:** MySQL for data storage, connected to the backend via REST API.
-  - 
+    
   - **UI/UX Design:** User interface designed in Figma, following a minimalist aesthetic with analog-inspired textures (crumpled paper, glassmorphism) for a relaxing experience.
-  - 
+    
   - **Mobile Programming:** Developed in Kotlin using the Android SDK, ensuring a smooth native experience.
-  - 
+    
   - **Backend Programming:** Backend developed in Java using Spring Boot, with RESTful APIs to manage data and communicate securely with the database.
-  - 
+    
   - **Platform:** Native Android app, compatible with modern Android devices.
 
 
