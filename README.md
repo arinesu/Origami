@@ -200,4 +200,14 @@ Mitigations:
 
 - If all core features are working and public acceptance is favorable, indicating that the app successfully provides a relaxing and safe environment for emotional expression, we could consider expanding the platform's reach or partnering with mental health awareness initiatives to promote the app to individuals dealing with anxiety or isolation.
 
+# MockUps:
+
+A aplicação utilizada foi o Figma:
+- 
+
+# Planeamento (Gráfico de Gantt):
+
+Utilizamos o site recomendado para a realização do Gráfico de Gantt:
+
+
 
