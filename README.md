@@ -309,11 +309,11 @@ A aplicação utilizada foi o Figma: https://www.figma.com/design/seNrJHOzt4dWOI
 
 # Planeamento (Gráfico de Gantt):
 
-| Fase do Projeto | Tarefas Principais | Início Estimado | Fim Estimado | Responsável |
+| Fase do Projeto | Tarefas Principais | Início Estimado | Fim Estimado |
 | :--- | :--- | :--- | :--- | :--- |
-| **1. Iniciação e Planeamento** | Definição da ideia, Project Charter, WBS, Requisitos e Relatório Inicial | 16 Setembro 2026 | 02 Outubro 2026 | Inês Domingos |
-| **2. Design e UX/UI** | Estudo de UI, texturas (papel/glassmorphism), Mockups no Figma e Protótipo | 03 Outubro 2026 | 20 Novembro 2026 | Inês Domingos |
-| **3. Arquitetura e Dados** | Modelo de domínio, configuração do MySQL e estrutura da Base de Dados | 21 Novembro 2026 | 13 Dezembro 2026 | Inês Domingos |
-| **4. Programação (Frontend/Backend)**| Código Mobile em Flutter/Dart, Backend em Node.js e integração via API REST | 14 Dezembro 2026 | 29 Dezembro 2026 | Inês Domingos |
-| **5. Testes e Afinações** | Execução dos guiões de teste, correção de bugs e testes de usabilidade | 30 Dezembro 2026 | 05 Janeiro 2027 | Inês Domingos |
-| **6. Entregáveis Finais** | Criação do vídeo promocional, edição do poster e preparação da apresentação | 06 Janeiro 2027 | 12 Janeiro 2027 | Inês Domingos |
+| **1. Iniciação e Planeamento** | Definição da ideia, Project Charter, WBS, Requisitos e Relatório Inicial | 16 Setembro 2026 | 02 Outubro 2026 |
+| **2. Design e UX/UI** | Estudo de UI, texturas (papel/glassmorphism), Mockups no Figma e Protótipo | 03 Outubro 2026 | 20 Novembro 2026 |
+| **3. Arquitetura e Dados** | Modelo de domínio, configuração do MySQL e estrutura da Base de Dados | 21 Novembro 2026 | 13 Dezembro 2026 |
+| **4. Programação (Frontend/Backend)**| Código Mobile em Flutter/Dart, Backend em Node.js e integração via API REST | 14 Dezembro 2026 | 29 Dezembro 2026 |
+| **5. Testes e Afinações** | Execução dos guiões de teste, correção de bugs e testes de usabilidade | 30 Dezembro 2026 | 05 Janeiro 2027 |
+| **6. Entregáveis Finais** | Criação do vídeo promocional, edição do poster e preparação da apresentação | 06 Janeiro 2027 | 12 Janeiro 2027 |
