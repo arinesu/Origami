@@ -322,7 +322,6 @@ A aplicação utilizada foi o Figma: https://www.figma.com/design/seNrJHOzt4dWOI
 # Conclusão e Objetivos a Atingir
 O presente documento estabelece as bases arquitetónicas e conceptuais da aplicação Origami. Como objetivos de execução a atingir até ao final do semestre, a equipa compromete-se a entregar um protótipo plenamente funcional desenvolvido em Flutter, suportado por uma arquitetura REST (Node.js) e uma base de dados relacional (MySQL). A principal prioridade de desenvolvimento será a correta implementação do algoritmo de dispersão (Monte Carlo) no mapa interativo, assegurando que o fluxo principal da aplicação — desde o check-in diário de humor até ao lançamento e recolha anónima de mensagens na base de dados — decorre sem falhas, validando a fiabilidade da estrutura cliente-servidor proposta.
 
-Como objetivos primários a atingir até ao final do projeto, destacamos: a entrega de um protótipo totalmente funcional, a garantia de uma navegação fluida e isenta de erros, a correta implementação do algoritmo de dispersão dos barcos no mapa interativo, e a validação positiva da usabilidade através de testes com o público-alvo, provando que é possível criar tecnologia imersiva desenhada para a paz de espírito.
 
 # Bibliografia
 • Flutter Framework Documentation: https://flutter.dev/docs
