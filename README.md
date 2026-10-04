@@ -12,7 +12,7 @@ Reginaldo António - 20251544 <br>
 Evandra Biala - 20251550 <br>
 Catarina Lourenço - 20251192
 
-Repositório no GitHub:
+**Repositório no GitHub:** https://github.com/arinesu/Origami
 
 # Professores
 **Programação de Dispositivos Móveis**
