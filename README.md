@@ -7,7 +7,10 @@
 Engenharia Informática
 
 # Elementos do Grupo:
-Inês Domingos - 20231458
+Inês Domingos - 20231458 <br>
+Reginaldo António <br>
+Evandra Biala <br>
+Catarina Lourenço 
 
 Repositório no GitHub:
 
@@ -87,30 +90,30 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 
 **2. Enquadramento nas Unidades Curriculares:**
 
-- **Programação de Dispositivos Móveis:** Desenvolvimento nativo da aplicação móvel (interface e lógica client-side) recorrendo ao **Android Studio**. <br>
+- **Programação de Dispositivos Móveis:** Desenvolvimento da aplicação móvel (interface e lógica client-side) recorrendo a **Flutter e Dart**. <br>
 - **Interfaces e Usabilidade:** Desenho, prototipagem e validação da experiência do utilizador (UX/UI) no **Figma**, garantindo uma navegação fluida, minimalista e a aplicação de texturas visuais (como o efeito de papel e glassmorphism).<br>
 - **Redes e Comunicação de Dados:** Implementação da arquitetura de comunicação entre a aplicação móvel (frontend) e o servidor (backend), assegurando a transmissão segura e eficiente dos dados (como o envio e recolha dos barcos no mapa global).<br>
 - **Bases de Dados:** Estruturação e armazenamento seguro das informações essenciais, tais como as credenciais anonimizadas dos utilizadores, o registo de humor diário e o histórico das mensagens (barcos) partilhadas e guardadas.<br>
-- **Matemática Discreta:** Aplicação de lógica matemática e teoria dos grafos/conjuntos para otimizar o algoritmo de distribuição dos barcos de papel no mapa global. Esta lógica garantirá que a visualização das mensagens seja dispersa, pseudoaleatória e eficiente, evitando sobreposição de barcos no ecrã.<br>
+- **Matemática Discreta:** Aplicação do **Método de Monte Carlo** para otimizar o algoritmo de distribuição dos barcos de papel no mapa global. Esta lógica garantirá que a visualização das mensagens seja dispersa, pseudoaleatória e eficiente, simulando estatisticamente o seu posicionamento e evitando sobreposição de barcos no ecrã.<br>
 
 **3. Requisitos Técnicos:**
 
-- **Linguagens de Programação:** Kotlin (Frontend) e Java (Backend).<br>
-- **Plataforma de Desenvolvimento:** Android Studio.<br>
+- **Linguagens de Programação:** Dart (Frontend) e JavaScript/TypeScript (Backend).<br>
+- **Plataforma de Desenvolvimento:** Flutter.<br>
 - **Design e Prototipagem:** Figma.<br>
 - **Base de Dados:** MySQL (via MySQL Workbench).<br>
-- **API:** Spring Boot.<br>
+- **API:** Node.js.<br>
 
 **4. Arquitetura da Solução:** 
 
-• **Frontend:** Desenvolvimento da interface gráfica e interatividade da aplicação no Android Studio, consumindo os serviços da API.<br>
-• **Backend:** Utilização da framework Spring Boot para gerir a lógica de negócio, a autenticação anonimizada e a comunicação fluida entre a aplicação móvel e a base de dados.<br>
+• **Frontend:** Desenvolvimento da interface gráfica e interatividade da aplicação em Flutter, consumindo os serviços da API.<br>
+• **Backend:** Utilização de Node.js para gerir a lógica de negócio, a autenticação anonimizada e a comunicação fluida entre a aplicação móvel e a base de dados.<br>
 • **Base de Dados:** Utilização de MySQL para modelação e persistência dos dados (utilizadores, barcos e registos de humor).<br>
 
 **5. Tecnologias a utilizar:** 
 
-• **Frontend:** Kotlin.<br>
-• **Backend:** Java.<br>
+• **Frontend:** Flutter.<br>
+• **Backend:** Node.js.<br>
 • **Base de Dados:** MySQL.<br>
 
 
@@ -120,7 +123,12 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 
 - Charter Date: 19 September 2026
 - Project Name: Origami
-- Project Managers: Inês Domingos
+- Project Managers: <br>
+Inês Domingos <br>
+Reginaldo António <br>
+Evandra Biala <br>
+Catarina Lourenço 
+
 - Expected Start Date: 1 October 2026
 - Expected Completion Date: 11 December 2026
 
@@ -132,8 +140,8 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 
   - **Database:** MySQL for data storage, connected to the backend via REST API.
   - **UI/UX Design:** User interface designed in Figma, following a minimalist aesthetic with analog-inspired textures (crumpled paper, glassmorphism) for a relaxing experience.
-  - **Mobile Programming:** Developed in Kotlin using the Android SDK, ensuring a smooth native experience.
-  - **Backend Programming:** Backend developed in Java using Spring Boot, with RESTful APIs to manage data and communicate securely with the database.   
+  - **Mobile Programming:** Developed in Flutter using Dart, ensuring a smooth native experience.
+  - **Backend Programming:** Backend developed in Node.js, with RESTful APIs to manage data and communicate securely with the database.   
   - **Platform:** Native Android app, compatible with modern Android devices.
 
 **4. Expected Benefits**
@@ -203,14 +211,14 @@ Mitigations:
  - 3.2.4. Ecrã de Perfil (Porto Seguro / Histórico em Masonry Layout)
 - 3.3. Implementação do Protótipo Interativo (Animações e ligações)
 
-**4. Desenvolvimento Backend (Spring Boot, Java, MySQL)**
+**4. Desenvolvimento Backend (Node.js, REST API, MySQL)**
 
-- 4.1. Configuração do Servidor e Ambiente de Desenvolvimento
+- 4.1. Configuração do Servidor Node.js e Ambiente de Desenvolvimento
 - 4.2. Criação e Estruturação da Base de Dados
 - 4.3. Desenvolvimento da REST API
 - 4.4. Implementação da Lógica de Negócio (Gestão de anonimato, lançamento e recolha de barcos)
 
-**5. Desenvolvimento Frontend (Android Studio, Kotlin)**
+**5. Desenvolvimento Frontend (Flutter, Dart)**
 
 - 5.1. Configuração do Projeto Mobile
 - 5.2. Implementação das Interfaces Gráficas
@@ -246,9 +254,9 @@ Mitigations:
 
 - Usabilidade (UX/UI): A interface deve adotar uma estética imersiva e minimalista, utilizando um modo noturno (tons índigo), texturas orgânicas (papel amachucado) e elementos em glassmorphism para induzir relaxamento e reduzir a carga cognitiva.
 - Privacidade e Proteção: A aplicação deve bloquear qualquer possibilidade de troca de mensagens diretas (chat 1-para-1) ou de identificação de autores, assegurando que o foco permanece na empatia e na saúde mental.
-- Desempenho (Algoritmo de Dispersão): O carregamento do mapa global deve ser fluido, utilizando lógicas de Matemática Discreta para distribuir espacialmente os barcos de papel, evitando a sobreposição de elementos no ecrã e garantindo tempos de resposta rápidos na REST API.
-- Tecnológicos (Frontend): A aplicação móvel (cliente) deve ser desenvolvida nativamente para a plataforma Android utilizando a linguagem Kotlin no Android Studio.
-- Tecnológicos (Backend e Dados): A lógica de negócio e a interligação de dados devem ser geridas por uma API REST desenvolvida em Java (framework Spring Boot), com armazenamento persistente e seguro numa base de dados relacional MySQL.
+- Desempenho (Algoritmo de Dispersão): O carregamento do mapa global deve ser fluido, utilizando o Método de Monte Carlo na distribuição espacial dos barcos de papel, evitando a sobreposição de elementos no ecrã e garantindo tempos de resposta rápidos na REST API.
+- Tecnológicos (Frontend): A aplicação móvel (cliente) deve ser desenvolvida utilizando a linguagem Dart e a framework Flutter.
+- Tecnológicos (Backend e Dados): A lógica de negócio e a interligação de dados devem ser geridas por uma API REST desenvolvida em Node.js, com armazenamento persistente e seguro numa base de dados relacional MySQL.
 
 
 ### Modelo do Domínio
@@ -301,5 +309,11 @@ A aplicação utilizada foi o Figma:
 
 # Planeamento (Gráfico de Gantt):
 
-Utilizamos o site recomendado para a realização do Gráfico de Gantt:
-
+| Fase do Projeto | Tarefas Principais | Início Estimado | Fim Estimado | Responsável |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. Iniciação e Planeamento** | Definição da ideia, Project Charter, WBS, Requisitos e Relatório Inicial | 16 Setembro 2026 | 02 Outubro 2026 | Inês Domingos |
+| **2. Design e UX/UI** | Estudo de UI, texturas (papel/glassmorphism), Mockups no Figma e Protótipo | 03 Outubro 2026 | 20 Novembro 2026 | Inês Domingos |
+| **3. Arquitetura e Dados** | Modelo de domínio, configuração do MySQL e estrutura da Base de Dados | 21 Novembro 2026 | 13 Dezembro 2026 | Inês Domingos |
+| **4. Programação (Frontend/Backend)**| Código Mobile em Flutter/Dart, Backend em Node.js e integração via API REST | 14 Dezembro 2026 | 29 Dezembro 2026 | Inês Domingos |
+| **5. Testes e Afinações** | Execução dos guiões de teste, correção de bugs e testes de usabilidade | 30 Dezembro 2026 | 05 Janeiro 2027 | Inês Domingos |
+| **6. Entregáveis Finais** | Criação do vídeo promocional, edição do poster e preparação da apresentação | 06 Janeiro 2027 | 12 Janeiro 2027 | Inês Domingos |
