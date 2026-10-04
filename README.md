@@ -321,12 +321,13 @@ A aplicação utilizada foi o Figma: https://www.figma.com/design/seNrJHOzt4dWOI
 
 
 # Conclusão e Objetivos a Atingir
-O presente documento estabelece as bases arquitetónicas e conceptuais da aplicação Origami. Como objetivos de execução a atingir até ao final do semestre, a equipa compromete-se a entregar um protótipo plenamente funcional desenvolvido em Flutter, suportado por uma arquitetura REST (Node.js) e uma base de dados relacional (MySQL). A principal prioridade de desenvolvimento será a correta implementação do algoritmo de dispersão (Monte Carlo) no mapa interativo, assegurando que o fluxo principal da aplicação — desde o check-in diário de humor até ao lançamento e recolha anónima de mensagens na base de dados — decorre sem falhas, validando a fiabilidade da estrutura cliente-servidor proposta.
+- O presente documento estabelece as bases arquitetónicas e conceptuais da aplicação Origami. Como objetivos de execução a atingir até ao final do semestre, a equipa compromete-se a entregar um protótipo plenamente funcional desenvolvido em Flutter, suportado por uma arquitetura REST (Node.js) e uma base de dados relacional (MySQL). A principal prioridade de desenvolvimento será a correta implementação do algoritmo de dispersão (Monte Carlo) no mapa interativo, assegurando que o fluxo principal da aplicação — desde o check-in diário de humor até ao lançamento e recolha anónima de mensagens na base de dados — decorre sem falhas, validando a fiabilidade da estrutura cliente-servidor proposta.
 
 
 # Bibliografia
 • Flutter Framework Documentation: https://flutter.dev/docs
-• Material Design / Glassmorphism UI Guidelines: https://m3.material.io/
-• Figma Prototyping: https://www.figma.com/
+• Figma (UI/UX Design & Prototyping): https://www.figma.com/
 • Node.js & REST API Architecture: https://nodejs.org/en/docs/
-• Aplicações de Referência Analisadas: *Bottled* (bottledapp.com), *Slowly* (slowly.app), *Finch* (finchcare.com).
+• Aplicações de Referência Analisadas: Bottled (bottledapp.com), Slowly (slowly.app), Finch (finchcare.com).
+• Ícones da Interface (UI Assets): Flaticon (https://www.flaticon.com/)
+• Texturas Visuais e Imagens de Fundo: Pinterest (https://www.pinterest.com/)
