@@ -1,7 +1,8 @@
 ![image](https://github.com/user-attachments/assets/dd55e169-cb3e-4b78-b666-63bd3092f4f6)
 
 ---
-
+# Universidade Europeia
+**IADE - Faculdade de Design, Tecnologia e Comunicação**
 
 # Curso:
 Engenharia Informática
@@ -317,3 +318,15 @@ A aplicação utilizada foi o Figma: https://www.figma.com/design/seNrJHOzt4dWOI
 | **4. Programação (Frontend/Backend)**| Código Mobile em Flutter/Dart, Backend em Node.js e integração via API REST | 14 Dezembro 2026 | 29 Dezembro 2026 |
 | **5. Testes e Afinações** | Execução dos guiões de teste, correção de bugs e testes de usabilidade | 30 Dezembro 2026 | 05 Janeiro 2027 |
 | **6. Entregáveis Finais** | Criação do vídeo promocional, edição do poster e preparação da apresentação | 06 Janeiro 2027 | 12 Janeiro 2027 |
+
+# Conclusão e Objetivos a Atingir
+O presente documento estabelece as bases arquitetónicas e conceptuais da aplicação Origami. Como objetivos de execução a atingir até ao final do semestre, a equipa compromete-se a entregar um protótipo plenamente funcional desenvolvido em Flutter, suportado por uma arquitetura REST (Node.js) e uma base de dados relacional (MySQL). A principal prioridade de desenvolvimento será a correta implementação do algoritmo de dispersão (Monte Carlo) no mapa interativo, assegurando que o fluxo principal da aplicação — desde o check-in diário de humor até ao lançamento e recolha anónima de mensagens na base de dados — decorre sem falhas, validando a fiabilidade da estrutura cliente-servidor proposta.
+
+Como objetivos primários a atingir até ao final do projeto, destacamos: a entrega de um protótipo totalmente funcional, a garantia de uma navegação fluida e isenta de erros, a correta implementação do algoritmo de dispersão dos barcos no mapa interativo, e a validação positiva da usabilidade através de testes com o público-alvo, provando que é possível criar tecnologia imersiva desenhada para a paz de espírito.
+
+# Bibliografia
+• Flutter Framework Documentation: https://flutter.dev/docs
+• Material Design / Glassmorphism UI Guidelines: https://m3.material.io/
+• Figma Prototyping: https://www.figma.com/
+• Node.js & REST API Architecture: https://nodejs.org/en/docs/
+• Aplicações de Referência Analisadas: *Bottled* (bottledapp.com), *Slowly* (slowly.app), *Finch* (finchcare.com).
