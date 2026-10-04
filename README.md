@@ -319,6 +319,7 @@ A aplicação utilizada foi o Figma: https://www.figma.com/design/seNrJHOzt4dWOI
 | **5. Testes e Afinações** | Execução dos guiões de teste, correção de bugs e testes de usabilidade | 30 Dezembro 2026 | 05 Janeiro 2027 |
 | **6. Entregáveis Finais** | Criação do vídeo promocional, edição do poster e preparação da apresentação | 06 Janeiro 2027 | 12 Janeiro 2027 |
 
+
 # Conclusão e Objetivos a Atingir
 O presente documento estabelece as bases arquitetónicas e conceptuais da aplicação Origami. Como objetivos de execução a atingir até ao final do semestre, a equipa compromete-se a entregar um protótipo plenamente funcional desenvolvido em Flutter, suportado por uma arquitetura REST (Node.js) e uma base de dados relacional (MySQL). A principal prioridade de desenvolvimento será a correta implementação do algoritmo de dispersão (Monte Carlo) no mapa interativo, assegurando que o fluxo principal da aplicação — desde o check-in diário de humor até ao lançamento e recolha anónima de mensagens na base de dados — decorre sem falhas, validando a fiabilidade da estrutura cliente-servidor proposta.
 
