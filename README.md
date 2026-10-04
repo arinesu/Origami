@@ -46,13 +46,9 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 
 # Público-Alvo
 • Jovens e Jovens Adultos (Geração Z e Millennials) que procuram um refúgio digital face à pressão, métricas e toxicidade das redes sociais convencionais;
-
 • Indivíduos que lidam com stress, ansiedade ou isolamento, e que necessitam de um espaço seguro e totalmente anónimo para desabafar sem receio de julgamento;
-
 • Pessoas introvertidas com dificuldade em verbalizar ou expressar os seus sentimentos diretamente a amigos e familiares;
-
 • Praticantes de journaling e mindfulness interessados numa ferramenta poética e imersiva para monitorizar o seu estado de espírito diário;
-
 • Utilizadores à procura de empatia e apoio mútuo, que encontram conforto na leitura e partilha de vulnerabilidades com uma comunidade global anónima.
 
 # Aplicações Semelhantes
@@ -84,75 +80,61 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 4. Visualiza as mensagens empáticas de outros utilizadores que colecionou, organizadas num layout estilo "alvenaria" (como pequenos post-its de papel sobrepostos).
 
 # Descrição da solução
+
 **1. Descrição Genérica:**
+
 - A solução consiste na criação de uma **aplicação móvel imersiva e focada na saúde mental**, que oferece uma experiência segura e anónima de expressão emocional. Inclui funcionalidades como um **mapa global interativo** onde navegam mensagens em forma de barcos de papel, um sistema de **acompanhamento diário de humor** mediado por um "Espírito Guia", e a possibilidade de recolher e colecionar mensagens de empatia deixadas por outros utilizadores num "Porto Seguro" (perfil pessoal).
 
 **2. Enquadramento nas Unidades Curriculares:**
+
 - **Programação de Dispositivos Móveis:** Desenvolvimento nativo da aplicação móvel (interface e lógica client-side) recorrendo ao **Android Studio**. <br>
-
 - **Interfaces e Usabilidade:** Desenho, prototipagem e validação da experiência do utilizador (UX/UI) no **Figma**, garantindo uma navegação fluida, minimalista e a aplicação de texturas visuais (como o efeito de papel e glassmorphism).<br>
-
 - **Redes e Comunicação de Dados:** Implementação da arquitetura de comunicação entre a aplicação móvel (frontend) e o servidor (backend), assegurando a transmissão segura e eficiente dos dados (como o envio e recolha dos barcos no mapa global).<br>
-
 - **Bases de Dados:** Estruturação e armazenamento seguro das informações essenciais, tais como as credenciais anonimizadas dos utilizadores, o registo de humor diário e o histórico das mensagens (barcos) partilhadas e guardadas.<br>
-
 - **Matemática Discreta:** Aplicação de lógica matemática e teoria dos grafos/conjuntos para otimizar o algoritmo de distribuição dos barcos de papel no mapa global. Esta lógica garantirá que a visualização das mensagens seja dispersa, pseudoaleatória e eficiente, evitando sobreposição de barcos no ecrã.<br>
 
 **3. Requisitos Técnicos:**
 
 - **Linguagens de Programação:** Kotlin (Frontend) e Java (Backend).<br>
-
 - **Plataforma de Desenvolvimento:** Android Studio.<br>
-
 - **Design e Prototipagem:** Figma.<br>
-
 - **Base de Dados:** MySQL (via MySQL Workbench).<br>
-
 - **API:** Spring Boot.<br>
 
-**4. Arquitetura da Solução:**<br>
+**4. Arquitetura da Solução:** 
 
 • **Frontend:** Desenvolvimento da interface gráfica e interatividade da aplicação no Android Studio, consumindo os serviços da API.<br>
-
 • **Backend:** Utilização da framework Spring Boot para gerir a lógica de negócio, a autenticação anonimizada e a comunicação fluida entre a aplicação móvel e a base de dados.<br>
-
 • **Base de Dados:** Utilização de MySQL para modelação e persistência dos dados (utilizadores, barcos e registos de humor).<br>
 
-**5. Tecnologias a utilizar:**<br>
+**5. Tecnologias a utilizar:** 
 
 • **Frontend:** Kotlin.<br>
-
 • **Backend:** Java.<br>
-
 • **Base de Dados:** MySQL.<br>
 
+
 # Project Charter
+
 **1. General Project Information**
+
 - Charter Date: 19 September 2026
-
 - Project Name: Origami
-
 - Project Managers: Inês Domingos
-
 - Expected Start Date: 1 October 2026
-
 - Expected Completion Date: 11 December 2026
 
 **2. Project Details**
+
 - Origami is a mobile application designed to promote mental health and facilitate emotional expression by providing an anonymous, immersive, and comforting digital space. The main reason behind this project is to create an alternative to conventional social networks, mitigating isolation and the difficulty in sharing feelings. By replacing the anxiety of likes and direct messaging with a contemplative environment where users can release their thoughts as paper boats on a global map, we aim to offer a digital refuge and a true virtual safe haven.
 
 **3. Key Requirements**
 
   - **Database:** MySQL for data storage, connected to the backend via REST API.
-    
   - **UI/UX Design:** User interface designed in Figma, following a minimalist aesthetic with analog-inspired textures (crumpled paper, glassmorphism) for a relaxing experience.
-    
   - **Mobile Programming:** Developed in Kotlin using the Android SDK, ensuring a smooth native experience.
-    
-  - **Backend Programming:** Backend developed in Java using Spring Boot, with RESTful APIs to manage data and communicate securely with the database.
-    
+  - **Backend Programming:** Backend developed in Java using Spring Boot, with RESTful APIs to manage data and communicate securely with the database.   
   - **Platform:** Native Android app, compatible with modern Android devices.
-
 
 **4. Expected Benefits**
 
@@ -163,9 +145,8 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 
 **5. Estimated Costs & Resources**
 
-- Estimated Costs: [Ajustar o valor conforme planeado, ex: $3000]
-- Resources: [Ajustar o valor conforme planeado, ex: $450]
-
+- Estimated Costs: $3000
+- Resources: $450
 
 **6. Estimated Milestones**
 
@@ -173,7 +154,6 @@ Com a dependência crescente das redes sociais convencionais, que frequentemente
 - Database - December 13
 - Mobile Programming - December 20
 - Backend Programming - January 10
-
 
 **7. Project Team**
 
@@ -183,10 +163,7 @@ Developers:
 - Evandra Biala
 - Catarina Lourenço
 
-
-**8. Stakeholders**
-
-**9. Overall Project Risk**
+**8. Overall Project Risk**
 
 Risks:
 - Due to the limited time to complete the project, there is a risk that we will not be able to implement all the desired functionalities (such as the complex map visualization).
@@ -196,9 +173,126 @@ Mitigations:
 - Conduct development and brainstorming sessions to prioritize essential features (the core loop of writing and releasing a boat) and ensure better project planning.
 - Collect feedback from a group of beta users during the testing phase to identify areas for improvement in the onboarding process and promote acceptance of the app's unique mechanics.
 
-**10. Project Success Criteria**
+**9. Project Success Criteria**
 
 - If all core features are working and public acceptance is favorable, indicating that the app successfully provides a relaxing and safe environment for emotional expression, we could consider expanding the platform's reach or partnering with mental health awareness initiatives to promote the app to individuals dealing with anxiety or isolation.
+
+
+# WBS - Work Breakdown Structure
+
+**1. Iniciação e Planeamento**
+
+- 1.1. Definição do Escopo e Ideia Inicial
+- 1.2. Elaboração do Project Charter e WBS
+- 1.3. Criação do Plano de Trabalhos e Gráfico de Gantt
+- 1.4. Definição da Arquitetura e Stack Tecnológico
+
+**2. Levantamento de Requisitos e Modelação**
+
+- 2.1. Definição dos Requisitos Funcionais e Não Funcionais
+- 2.2. Criação dos Guiões de Teste
+- 2.3. Elaboração do Modelo de Domínio (Entidades e Relações)
+
+**3. Design e Prototipagem (UI/UX - Figma)**
+
+- 3.1. Exploração Visual (Texturas orgânicas, glassmorphism, paleta de cores)
+- 3.2. Desenho de Mockups de Alta Fidelidade
+ - 3.2.1. Ecrãs de Autenticação (Login e Sign Up)
+ - 3.2.2. Ecrã de Check-in de Humor (Espírito Guia)
+ - 3.2.3. Ecrã Principal (Mapa Global e Barcos Interativos)
+ - 3.2.4. Ecrã de Perfil (Porto Seguro / Histórico em Masonry Layout)
+- 3.3. Implementação do Protótipo Interativo (Animações e ligações)
+
+**4. Desenvolvimento Backend (Spring Boot, Java, MySQL)**
+
+- 4.1. Configuração do Servidor e Ambiente de Desenvolvimento
+- 4.2. Criação e Estruturação da Base de Dados
+- 4.3. Desenvolvimento da REST API
+- 4.4. Implementação da Lógica de Negócio (Gestão de anonimato, lançamento e recolha de barcos)
+
+**5. Desenvolvimento Frontend (Android Studio, Kotlin)**
+
+- 5.1. Configuração do Projeto Mobile
+- 5.2. Implementação das Interfaces Gráficas
+- 5.3. Integração do Frontend com a REST API
+- 5.4. Implementação da Lógica de Navegação e Sistema de Partilha de Emoções no Mapa
+
+**6. Testes e Controlo de Qualidade**
+
+- 6.1. Testes de Usabilidade da Interface
+- 6.2. Testes de Integração (Conexão Frontend-Backend)
+- 6.3. Execução dos Guiões de Teste (Validação do Caso "Core" e Secundários)
+
+**7. Documentação e Entregáveis Finais**
+
+- 7.1. Redação e Submissão do Relatório do Projeto (GitHub / PDF)
+- 7.2. Design do Poster da Aplicação
+- 7.3. Gravação e Edição do Vídeo Promocional (1 a 2 minutos)
+- 7.4. Preparação da Apresentação Final (Pitch)
+
+# Requisitos funcionais e não funcionais
+
+**Requisitos Funcionais**
+
+- O sistema deve permitir o registo e a autenticação anónima de utilizadores, sem recolha de dados pessoais identificáveis.
+- O sistema deve apresentar um check-in diário de humor, onde o utilizador interage com o seu "Espírito Guia" para registar o seu estado emocional.
+- O sistema deve disponibilizar uma área de edição de texto para a escrita de desabafos, permitindo a associação de uma tag de emoção primária à mensagem.
+- O sistema deve converter o desabafo escrito num "barco de papel" e lançá-lo visualmente num mapa global interativo.
+- O sistema deve permitir ao utilizador navegar pelo mapa global, descobrindo e abrindo barcos de papel deixados à deriva por outros utilizadores aleatórios.
+- O sistema deve oferecer a opção de guardar as mensagens de outros utilizadores na secção "Porto Seguro" do perfil.
+- O sistema deve apresentar o histórico pessoal do utilizador (barcos lançados e barcos guardados) através de uma interface organizada em grelha assimétrica (masonry layout).
+
+**Requisitos Não Funcionais**
+
+- Usabilidade (UX/UI): A interface deve adotar uma estética imersiva e minimalista, utilizando um modo noturno (tons índigo), texturas orgânicas (papel amachucado) e elementos em glassmorphism para induzir relaxamento e reduzir a carga cognitiva.
+- Privacidade e Proteção: A aplicação deve bloquear qualquer possibilidade de troca de mensagens diretas (chat 1-para-1) ou de identificação de autores, assegurando que o foco permanece na empatia e na saúde mental.
+- Desempenho (Algoritmo de Dispersão): O carregamento do mapa global deve ser fluido, utilizando lógicas de Matemática Discreta para distribuir espacialmente os barcos de papel, evitando a sobreposição de elementos no ecrã e garantindo tempos de resposta rápidos na REST API.
+- Tecnológicos (Frontend): A aplicação móvel (cliente) deve ser desenvolvida nativamente para a plataforma Android utilizando a linguagem Kotlin no Android Studio.
+- Tecnológicos (Backend e Dados): A lógica de negócio e a interligação de dados devem ser geridas por uma API REST desenvolvida em Java (framework Spring Boot), com armazenamento persistente e seguro numa base de dados relacional MySQL.
+
+
+### Modelo do Domínio
+
+O modelo de domínio da aplicação Origami é composto pelas seguintes entidades principais e respetivas relações:
+
+#### 1. Utilizador (User)
+Representa o indivíduo que utiliza a aplicação de forma anónima.
+- **Atributos:**
+  - `ID_Utilizador` (Identificador único)
+  - `Nickname` (Nome anónimo gerado ou escolhido)
+  - `Avatar_ID` (Ícone representativo do perfil)
+  - `Data_Criacao` (Data de registo na plataforma)
+
+#### 2. Barco (Desabafo / Message)
+Representa a mensagem escrita pelo utilizador e lançada no mapa global.
+- **Atributos:**
+  - `ID_Barco` (Identificador único)
+  - `Texto` (O conteúdo do desabafo)
+  - `Tag_Emocao` (Emoção principal associada, ex: Esperança, Ansiedade)
+  - `Data_Lancamento` (Data e hora em que o barco foi lançado)
+  - `Coordenadas` (Latitude e Longitude simuladas para posicionamento no mapa)
+  - `Autor_ID` (Chave estrangeira - Referência ao Utilizador que criou)
+
+#### 3. Registo de Humor (Check-in Diário)
+Representa a interação diária do utilizador com o Espírito Guia.
+- **Atributos:**
+  - `ID_Registo` (Identificador único)
+  - `Estado_Espirito` (O humor selecionado no dia)
+  - `Data_Registo` (Data do check-in)
+  - `Utilizador_ID` (Chave estrangeira - Referência ao Utilizador)
+
+#### 4. Porto Seguro (Barcos Guardados / Saved Boats)
+Entidade de associação que regista quais os barcos de outros utilizadores que um determinado utilizador decidiu guardar e colecionar.
+- **Atributos:**
+  - `Utilizador_ID` (Chave estrangeira - Identificador do utilizador que guardou o barco)
+  - `Barco_ID` (Chave estrangeira - Identificador do barco guardado)
+  - `Data_Recolha` (Data em que o barco foi adicionado ao Porto Seguro)
+
+#### Relações Principais:
+- **1 para Muitos (1:N):** Um *Utilizador* pode criar e lançar vários *Barcos*, mas cada *Barco* é criado por um único autor.
+- **1 para Muitos (1:N):** Um *Utilizador* pode ter vários *Registos de Humor* ao longo do tempo (um por dia).
+- **Muitos para Muitos (N:M):** Um *Utilizador* pode guardar vários *Barcos* de outras pessoas no seu "Porto Seguro", e um *Barco* deixado à deriva no mapa pode ser guardado por vários *Utilizadores* diferentes ao mesmo tempo.
+
 
 # MockUps:
 
@@ -208,6 +302,4 @@ A aplicação utilizada foi o Figma:
 # Planeamento (Gráfico de Gantt):
 
 Utilizamos o site recomendado para a realização do Gráfico de Gantt:
-
-
 
