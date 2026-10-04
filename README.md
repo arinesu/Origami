@@ -8,9 +8,9 @@ Engenharia Informática
 
 # Elementos do Grupo:
 Inês Domingos - 20231458 <br>
-Reginaldo António <br>
-Evandra Biala <br>
-Catarina Lourenço 
+Reginaldo António - 20251544 <br>
+Evandra Biala - 20251550 <br>
+Catarina Lourenço - 20251192
 
 Repositório no GitHub:
 
