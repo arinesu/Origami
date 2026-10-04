@@ -311,7 +311,7 @@ A aplicação utilizada foi o Figma: https://www.figma.com/design/seNrJHOzt4dWOI
 # Planeamento (Gráfico de Gantt):
 
 | Fase do Projeto | Tarefas Principais | Início Estimado | Fim Estimado |
-| :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- |
 | **1. Iniciação e Planeamento** | Definição da ideia, Project Charter, WBS, Requisitos e Relatório Inicial | 16 Setembro 2026 | 02 Outubro 2026 |
 | **2. Design e UX/UI** | Estudo de UI, texturas (papel/glassmorphism), Mockups no Figma e Protótipo | 03 Outubro 2026 | 20 Novembro 2026 |
 | **3. Arquitetura e Dados** | Modelo de domínio, configuração do MySQL e estrutura da Base de Dados | 21 Novembro 2026 | 13 Dezembro 2026 |
