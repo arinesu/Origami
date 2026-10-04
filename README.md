@@ -304,8 +304,8 @@ Entidade de associação que regista quais os barcos de outros utilizadores que 
 
 # MockUps:
 
-A aplicação utilizada foi o Figma:
-- 
+A aplicação utilizada foi o Figma: https://www.figma.com/design/seNrJHOzt4dWOITqPvN1X8/Origami?node-id=0-1&t=wHxSNIL6NEsNgkDa-1
+
 
 # Planeamento (Gráfico de Gantt):
 
