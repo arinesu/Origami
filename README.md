@@ -325,9 +325,9 @@ A aplicação utilizada foi o Figma: https://www.figma.com/design/seNrJHOzt4dWOI
 
 
 # Bibliografia
-• Flutter Framework Documentation: https://flutter.dev/docs
-• Figma (UI/UX Design & Prototyping): https://www.figma.com/
-• Node.js & REST API Architecture: https://nodejs.org/en/docs/
-• Aplicações de Referência Analisadas: Bottled (bottledapp.com), Slowly (slowly.app), Finch (finchcare.com).
-• Ícones da Interface (UI Assets): Flaticon (https://www.flaticon.com/)
+• Flutter Framework Documentation: https://flutter.dev/docs <br>
+• Figma (UI/UX Design & Prototyping): https://www.figma.com/ <br>
+• Node.js & REST API Architecture: https://nodejs.org/en/docs/ <br>
+• Aplicações de Referência Analisadas: Bottled (https://play.google.com/store/apps/details?id=com.bottledapp.bottled) , Slowly (https://play.google.com/store/apps/details?id=com.slowlyapp) , Finch https://finchcare.com . <br>
+• Ícones da Interface (UI Assets): Flaticon (https://www.flaticon.com/) <br>
 • Texturas Visuais e Imagens de Fundo: Pinterest (https://www.pinterest.com/)
