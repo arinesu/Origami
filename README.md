@@ -331,3 +331,91 @@ A aplicação utilizada foi o Figma: https://www.figma.com/design/seNrJHOzt4dWOI
 • Aplicações de Referência Analisadas: Bottled (https://play.google.com/store/apps/details?id=com.bottledapp.bottled) , Slowly (https://play.google.com/store/apps/details?id=com.slowlyapp) , Finch https://finchcare.com . <br>
 • Ícones da Interface (UI Assets): Flaticon (https://www.flaticon.com/) <br>
 • Texturas Visuais e Imagens de Fundo: Pinterest (https://www.pinterest.com/)
+
+# Personas
+
+---
+
+*   **Nome:** Sofia
+*   **Idade:** 21 a 23 anos
+*   **Profissão:** Estudante universitária/trabalhadora
+*   **Localização:** Portugal
+*   **Status Familiar:** Solteira
+
+**Perfil e Comportamento**
+
+A Sofia é uma jovem que, quando tem um dia mau ou sente ansiedade, evita redes sociais como o Instagram e prefere usar aplicações de notas do telemóvel para desabafar ou o WhatsApp para falar com amigos. Devido ao medo do julgamento alheio, já apagou ou deixou de partilhar o que sentia várias vezes. Ela sente a pressão das redes sociais e valoriza muito a privacidade e a ausência de pressão social e notificações.
+
+**Objetivos ao usar o app**
+
+*   Fazer catarse emocional de forma livre num ambiente 100% privado e anónimo.
+*   Materializar os seus medos num ambiente seguro.
+*   Receber conforto real e empático em vez de métricas de popularidade vazias.
+
+**Frustrações e Desafios**
+
+*   O foco atual em "Likes" e validação pública nas redes e aplicações.
+*   O excesso de notificações diárias.
+*   Aplicações de saúde mental que exigem gamificação e manter *streaks* (foco em conquistas diárias em vez de ajuda real).
+
+**Motivações**
+
+*   Procura empatia real e consolo anónimo.
+*   Deseja um espaço digital que não exija um compromisso diário ou validação social.
+
+---
+
+*   **Nome:** Alex
+*   **Idade:** 21 a 23 anos
+*   **Profissão:** Desempregado
+*   **Localização:** Portugal
+*   **Status Familiar:** Solteiro
+
+**Perfil e Comportamento**
+
+O Alex, de identidade não-binária, gere a sua ansiedade fugindo para plataformas de vídeos. Embora sinta pouca pressão social das redes (nível 2 em 5) e não costume apagar publicações por medo de julgamento, é um utilizador frequente de outras aplicações de saúde mental. O seu principal problema online é o choque ao lidar de forma inesperada com conteúdos sensíveis.
+
+**Objetivos ao usar o app**
+
+*   Navegar num ecossistema seguro e controlado focado no consumo de desabafos.
+*   Tirar partido do aviso de gatilho de conteúdo ("Grief Modal") antes de interagir com barcos alheios.
+*   Consolar as outras pessoas sem a necessidade de "Likes".
+
+**Frustrações e Desafios**
+
+*   Cruzar-se com conteúdos pesados e tristes na internet sem qualquer aviso prévio (*doomscrolling*).
+*   Plataformas que o apanham desprevenido em relação ao conteúdo que consome.
+
+**Motivações**
+
+*   Prevenir surpresas negativas na navegação online.
+*   Explorar aplicações focadas na saúde mental.
+
+---
+
+
+*   **Nome:** Tiago
+*   **Idade:** 21 a 23 anos
+*   **Profissão:** Trabalhador
+*   **Localização:** Portugal
+*   **Status Familiar:** Solteiro
+
+**Perfil e Comportamento**
+
+O Tiago, do género masculino, afasta-se para o YouTube num dia mau e afirma não sentir qualquer ansiedade ou pressão com as redes sociais (nível 1 em 5). Raramente deixa de publicar o que sente por medo dos outros e nunca utilizou ferramentas de meditação ou bem-estar na sua rotina. A sua posição em relação ao *doomscrolling* é igual à do Alex: não suporta ver conteúdos pesados sem estar preparado.
+
+**Objetivos ao usar o app**
+
+*   Empatizar de longe com o que as outras pessoas publicam, não pretendendo usar a aplicação para desabafar as suas próprias emoções.
+*   Abrir barcos e distribuir ícones de conforto (como abraços) a quem precisa.
+*   Tirar partido de uma interação interpessoal menos artificial do que nas redes tradicionais.
+
+**Frustrações e Desafios**
+
+*   Ler conteúdo pesado sem aviso ou preparação prévia.
+*   Considera as interações e os "Likes" da atualidade nas redes sociais como vazios e artificiais.
+
+**Motivações**
+
+*   Interagir de forma genuína e atenciosa com outras pessoas sem se expor.
+*   Participar ativamente no ecossistema através de pequenos gestos de suporte anónimo.
