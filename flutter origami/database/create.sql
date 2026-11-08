@@ -2,8 +2,7 @@
 CREATE DATABASE IF NOT EXISTS origami_db;
 USE origami_db;
 
--- 1. Tabela Utilizadores
--- Representa o indivíduo que utiliza a aplicação, armazenando credenciais e perfil anónimo.
+
 CREATE TABLE utilizadores (
     id_utilizador INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL UNIQUE,
@@ -13,8 +12,7 @@ CREATE TABLE utilizadores (
     data_criacao DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
--- 2. Tabela Barcos (Oceano Global)
--- Guarda todos os textos deitados ao mar, as emoções mapeadas e as coordenadas visuais.
+
 CREATE TABLE barcos (
     id_barco INT AUTO_INCREMENT PRIMARY KEY,
     texto TEXT NOT NULL,
@@ -27,8 +25,7 @@ CREATE TABLE barcos (
     FOREIGN KEY (autor_id) REFERENCES utilizadores(id_utilizador) ON DELETE CASCADE
 );
 
--- 3. Tabela Registos de Humor (Check-in Diário)
--- Guarda o estado de espírito diário mediado pelo "Espírito Guia".
+
 CREATE TABLE registos_humor (
     id_registo INT AUTO_INCREMENT PRIMARY KEY,
     estado_espirito VARCHAR(50) NOT NULL,
@@ -37,8 +34,7 @@ CREATE TABLE registos_humor (
     FOREIGN KEY (utilizador_id) REFERENCES utilizadores(id_utilizador) ON DELETE CASCADE
 );
 
--- 4. Tabela Porto Seguro (Barcos Guardados)
--- Tabela de associação (N:M) que regista quando um utilizador apanha e guarda um barco.
+
 CREATE TABLE porto_seguro (
     utilizador_id INT NOT NULL,
     barco_id INT NOT NULL,
