@@ -419,3 +419,63 @@ O Tiago, do género masculino, afasta-se para o YouTube num dia mau e afirma nã
 
 *   Interagir de forma genuína e atenciosa com outras pessoas sem se expor.
 *   Participar ativamente no ecossistema através de pequenos gestos de suporte anónimo.
+
+
+# Guiões de Utilização (User Journeys)
+
+Os guiões da Origami dividem-se em dois fluxos complementares (o momento de catarse e o momento de empatia), desenhados especificamente para as necessidades das personas mapeadas:
+
+**Guião A: O Fluxo de Libertação (Foco na Persona "Sofia")**
+1. **Gatilho:** A utilizadora sente um pico de ansiedade devido a pressões académicas ou sociais.
+2. **Ação de Criação:** Abre a Origami e, sem categorizar logo a emoção, escreve livremente tudo o que sente no formato de um barco de papel ("Write a boat").
+3. **Processamento:** Associa uma emoção (ex: Ansiedade, Esperança) ao barco, determinando a sua cor no mapa.
+4. **Libertação:** Lança o barco ao mar global ("Set Sail") para materializar o fecho desse sentimento e abandona a aplicação, sentindo o alívio psicológico de ter exteriorizado o peso. 
+5. **Recompensa:** Mais tarde, ao regressar de forma anónima, descobre que recebeu ícones de conforto genuíno, sentindo-se compreendida sem exposição pública.
+
+**Guião B: O Fluxo de Consumo e Apoio (Foco nas Personas "Alex" e "Tiago")**
+1. **Interação:** O utilizador abre a app para observar o Oceano Global e clica num barco flutuante com uma cor correspondente a "Melancolia".
+2. **Proteção (Grief Modal):** O ecrã fica turvo e surge o aviso prévio de conteúdo sensível. O utilizador reflete sobre o seu estado de espírito e aceita abrir o barco apenas se se sentir capaz de ajudar.
+3. **Leitura e Empatia:** Lê o desabafo anónimo.
+
+
+5. **Conforto:** Em vez de dar um "Like", envia um símbolo de conforto ("Send Love") que chega anonimamente ao autor do barco, ou decide gravar essa mensagem no seu "Porto Seguro" para ler mais tarde.
+
+### 3. Esboço do Diagrama de Classes (Modelo Conceptual)
+
+O modelo conceptual foca-se nas entidades principais do sistema Origami e nas relações estabelecidas entre elas na base de dados.
+
+**Descrição das Relações Principais:**
+* **Utilizador (1) ── (N) Barcos:** Um utilizador pode criar e lançar vários barcos, mas cada barco tem apenas um autor (relação 1 para muitos).
+* **Utilizador (1) ── (N) Registos de Humor:** Um utilizador pode fazer vários check-ins diários do seu estado de espírito ao longo do tempo.
+* **Utilizador (N) ── (M) Barcos (Porto Seguro):** Vários utilizadores podem guardar vários barcos criados por outras pessoas. Sendo uma relação de muitos-para-muitos, esta origina a entidade associativa "Porto Seguro".
+
+*(Diagrama Conceptual das Entidades e Relações)*
+
+```mermaid
+classDiagram
+    direction LR
+    class Utilizador {
+        +id_utilizador
+        +email
+        +nickname
+    }
+    class Barco {
+        +id_barco
+        +texto
+        +tag_emocao
+        +cor
+    }
+    class Registo_Humor {
+        +id_registo
+        +estado_espirito
+    }
+    class Porto_Seguro {
+        <<Entidade Associativa>>
+        +utilizador_id
+        +barco_id
+    }
+
+    Utilizador "1" --> "*" Barco : lança (autor_id)
+    Utilizador "1" --> "*" Registo_Humor : regista check-in
+    Utilizador "1" --> "*" Porto_Seguro : guarda
+    Barco "1" --> "*" Porto_Seguro : é guardado em
