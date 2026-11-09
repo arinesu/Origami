@@ -479,3 +479,158 @@ classDiagram
     Utilizador "1" --> "*" Registo_Humor : regista check-in
     Utilizador "1" --> "*" Porto_Seguro : guarda
     Barco "1" --> "*" Porto_Seguro : é guardado em
+```
+
+
+### 4. Primeira Versão da Documentação REST
+
+A comunicação entre a aplicação móvel (front-end em Flutter) e o servidor (back-end em Node.js/Express) é assegurada por uma API RESTful. Todos os pedidos e respostas utilizam o formato JSON. 
+
+Abaixo encontram-se documentados os *endpoints* desenvolvidos para esta versão alfa do protótipo:
+
+#### 4.1. Autenticação e Registo
+
+### Registar Utilizador
+* **Endpoint:** `/api/registo`
+* **Método:** `POST`
+* **Descrição:** Regista um novo utilizador na plataforma.
+* **Payload (Body):**
+  ```json
+  {
+    "email": "exemplo@ua.pt",
+    "password": "senha_segura",
+    "nickname": "Explorador"
+  } 
+
+* **Respostas Esperadas:**
+  * `201 Created` (Mensagem de sucesso e ID gerado)
+  * `500 Internal Server Error` (Erro de servidor)
+
+**Login de Utilizador**
+* **Endpoint:** `/api/login`
+* **Método:** `POST`
+* **Descrição:** Valida as credenciais do utilizador e permite o acesso à aplicação.
+* **Payload (Body):**
+  ```json
+  {
+    "email": "exemplo@ua.pt",
+    "password": "senha_segura"
+  }
+
+#### 4.2. Gestão de Barcos (Desabafos)
+
+**Lançar um Barco ao Mar (Criar)**
+* **Endpoint:** `/api/barcos`
+* **Método:** `POST`
+* **Descrição:** Guarda um novo barco (desabafo) na base de dados, associando-lhe uma emoção e as coordenadas espaciais para visualização no mapa.
+* **Payload (Body):**
+  ```json
+  {
+    "autor_id": 1,
+    "texto": "Hoje foi um dia difícil, mas vai passar.",
+    "tag_emocao": "Ansiedade",
+    "cor": "#4A4F54",
+    "posicao_top": 150.5,
+    "posicao_left": 200.0
+  }
+* **Respostas Esperadas:**
+  * `201 Created` (Mensagem de sucesso e ID do barco)
+  * `500 Internal Server Error` (Erro ao guardar)
+
+**Oceano Global (Ler todos os Barcos)**
+* **Endpoint:** `/api/barcos`
+* **Método:** `GET`
+* **Descrição:** Retorna todos os barcos lançados na plataforma para renderização no mapa, efetuando um `JOIN` com a tabela de utilizadores para incluir o `nickname` do autor (mantendo o anonimato do email real).
+* **Payload (Body):** *(Nenhum)*
+* **Respostas Esperadas:**
+  * `200 OK` (Array de objetos JSON com os barcos)
+  * `500 Internal Server Error` (Erro ao carregar dados)
+
+  
+### 5. Primeira Versão do Dicionário de Dados
+
+O Dicionário de Dados descreve ao detalhe a estrutura do Modelo Entidade-Relação (MER) implementado na base de dados MySQL, especificando as tabelas, os tipos de dados e as respetivas restrições.
+
+#### 5.1. Tabela: `Utilizador`
+Armazena as credenciais e informações de perfil dos utilizadores da aplicação.
+
+| Atributo | Tipo de Dados | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `id_utilizador` | INT | PK, AUTO_INCREMENT | Identificador único do utilizador. |
+| `email` | VARCHAR(255) | UNIQUE, NOT NULL | Endereço de email para login (mantido privado). |
+| `password` | VARCHAR(255) | NOT NULL | Hash da palavra-passe do utilizador. |
+| `nickname` | VARCHAR(50) | NOT NULL | Nome fictício/público escolhido pelo utilizador. |
+| `data_criacao` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Data e hora de registo na plataforma. |
+
+#### 5.2. Tabela: `Barco`
+Guarda os desabafos criados pelos utilizadores e a sua posição espacial no oceano virtual.
+
+| Atributo | Tipo de Dados | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `id_barco` | INT | PK, AUTO_INCREMENT | Identificador único do barco. |
+| `texto` | TEXT | NOT NULL | O conteúdo do desabafo escrito pelo utilizador. |
+| `tag_emocao` | VARCHAR(50) | NOT NULL | A emoção associada ao desabafo (ex: Ansiedade, Luto). |
+| `cor` | VARCHAR(7) | NOT NULL | O código hexadecimal da cor do barco (ex: #4A4F54). |
+| `posicao_top` | DECIMAL(8,2) | NOT NULL | Coordenada Y (vertical) para renderização no mapa. |
+| `posicao_left` | DECIMAL(8,2) | NOT NULL | Coordenada X (horizontal) para renderização no mapa. |
+| `autor_id` | INT | FK, NOT NULL | Referência ao `id_utilizador` que criou o barco. |
+
+#### 5.3. Tabela: `Registo_Humor`
+Regista os *check-ins* diários do estado de espírito de cada utilizador.
+
+| Atributo | Tipo de Dados | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `id_registo` | INT | PK, AUTO_INCREMENT | Identificador único do registo de humor. |
+| `estado_espirito` | VARCHAR(50) | NOT NULL | A emoção sentida no momento do check-in. |
+| `data_registo` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Data e hora em que o registo foi efetuado. |
+| `utilizador_id` | INT | FK, NOT NULL | Referência ao `id_utilizador` que fez o check-in. |
+
+#### 5.4. Tabela Associativa: `Porto_Seguro`
+Materializa a relação de muitos-para-muitos, permitindo que utilizadores guardem barcos de outros utilizadores (ou os próprios) para lerem mais tarde.
+
+| Atributo | Tipo de Dados | Restrições | Descrição |
+| :--- | :--- | :--- | :--- |
+| `utilizador_id` | INT | PK, FK | Referência ao utilizador que está a guardar o barco. |
+| `barco_id` | INT | PK, FK | Referência ao barco que está a ser guardado. |
+| `data_guarda` | TIMESTAMP | DEFAULT CURRENT_TIMESTAMP | Data e hora em que o barco foi adicionado ao porto seguro. |
+
+*(Nota: PK = Primary Key / Chave Primária | FK = Foreign Key / Chave Estrangeira)*
+
+### 6. BD Report: Guia de Dados (Esboço da Estrutura de Dados Exemplo)
+
+Este guia ilustra a estrutura e a tipologia dos dados fictícios inseridos na base de dados através do script `populate.sql`. Estes dados de povoamento foram estruturados para simular um ecossistema real de utilização da aplicação Origami, espelhando os perfis e as dores das *Personas* definidas anteriormente (Sofia, Alex e Tiago).
+
+#### 6.1. Dados de Exemplo: Utilizador
+*(A password encontra-se em formato hash para simular os requisitos de segurança da API)*
+
+| id_utilizador | email | password (hash) | nickname |
+| :--- | :--- | :--- | :--- |
+| 1 | sofia.estudante@ua.pt | `$2b$10$xyz789...` | Lótus |
+| 2 | alex.cons@ua.pt | `$2b$10$abc123...` | Viajante |
+| 3 | tiago.apoio@ua.pt | `$2b$10$qwe456...` | Farol |
+
+#### 6.2. Dados de Exemplo: Barco
+*(Desabafos lançados no oceano global com as respetivas coordenadas de renderização)*
+
+| id_barco | texto | tag_emocao | cor | posicao_top | posicao_left | autor_id |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | "Os exames estão a dar cabo de mim, sinto que não vou conseguir." | Ansiedade | #4A4F54 | 250.50 | 120.30 | 1 |
+| 2 | "Hoje consegui sair da cama e ir dar uma volta. Pequenas vitórias." | Esperança | #F2D2BD | 410.15 | 300.00 | 2 |
+| 3 | "Sinto-me tão sozinho mesmo rodeado de pessoas na faculdade." | Melancolia | #808080 | 150.00 | 450.75 | 1 |
+
+#### 6.3. Dados de Exemplo: Registo_Humor
+*(O histórico de check-ins diários para monitorização emocional dos utilizadores)*
+
+| id_registo | estado_espirito | data_registo | utilizador_id |
+| :--- | :--- | :--- | :--- |
+| 1 | Exausta | 2023-11-08 10:00:00 | 1 |
+| 2 | Calmo | 2023-11-08 14:30:00 | 2 |
+| 3 | Ansiosa | 2023-11-09 09:15:00 | 1 |
+
+#### 6.4. Dados de Exemplo: Porto_Seguro (Tabela Associativa)
+*(Simula a interação do ecossistema: o 'Alex' e o 'Tiago' guardam o desabafo da 'Sofia' para oferecerem suporte)*
+
+| utilizador_id | barco_id | data_guarda |
+| :--- | :--- | :--- |
+| 2 | 1 | 2023-11-08 11:45:00 |
+| 3 | 1 | 2023-11-08 18:20:00 |
